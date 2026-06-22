@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Content Creator Registration page</title>
+    <link rel="stylesheet" href="new-content-creator.css">
+</head>
+<body>
+    <nav>
+        <a href="https://www.google.com">For more information</a>
+    </nav>
+
+    <header>New Content Creator Registration</header>
+    <main>
+        <h1>New Content Creator Registration</h1>
+
+        <section>
+            <h2>Introduction</h2>
+            <p>This page is designed for new content creators to register and gain access to our platform. By registering, you will be able to create and share your content with a wider audience.</p>
+            <p>Welcome to our registration page!<br>Please fill out the form below to register.</p>
+        </section>
+
+        <section>
+            <h2>Registration Form</h2>
+            <form action="submit_registration.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="occupation">Occupation:</label>
+            <input type="text" id="occupation" name="occupation" required>
+
+            <label for="date-of-birth">Date of Birth:</label>
+            <input type="date" id="date-of-birth" name="date-of-birth" required>
+
+            <label for="content-genres">Content Genres:</label>
+            <select id="content-genres" name="content-genres" required>
+                <option value="">Select a genre</option>
+                <option value="gaming">Gaming</option>
+                <option value="lifestyle">Lifestyle</option>
+                <option value="education">Education</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="technology">Technology</option>
+            </select>
+
+            <label for="weekly-upload-volume">Expected Weekly Upload Volume:</label>
+            <input type="number" id="weekly-upload-volume" name="weekly-upload-volume" min="1" max="100" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Register">
+        </form>
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 67 Creator Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>
